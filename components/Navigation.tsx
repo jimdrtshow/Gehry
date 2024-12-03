@@ -52,7 +52,7 @@ export default function Navigation() {
       {/* MENU PAGE  */}
       <div
         className={clsx(
-          "w-screen h-[70vh] top-[10vh] fixed z-50 bg-white justify-center items-center",
+          "w-screen h-[83vh] top-[10vh] fixed z-50 bg-white justify-center items-center",
           {
             hidden: !menuPhoneOpen,
             flex: menuPhoneOpen,
@@ -63,8 +63,11 @@ export default function Navigation() {
           <div className="w-full h-full flex justify-start items-start">
             <ul className="flex flex-col">
               {nav_items.map((item, index) => (
-                <li key={index} className="p-10 ">
+                <li key={index} className="p-7 ">
                   <Link
+                    onClick={() => {
+                      setMenuPhoneOpen(!menuPhoneOpen);
+                    }}
                     href={item.href}
                     className="text-black text-xl flex items-start justify-start"
                   >

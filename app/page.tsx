@@ -4,18 +4,15 @@ import Studio_app from "./_components/Studio_app";
 import Work_app from "./_components/Work_app";
 import Our_job_video_app from "./_components/Our_job_video_app";
 import Our_job_app from "./_components/Our_job_app";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main>
-      <Navigation />
       <Hero_app />
       <Studio_app />
       <Work_app />
       <Our_job_video_app />
       <Our_job_app />
-      <Footer />
     </main>
   );
 }

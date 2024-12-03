@@ -2,11 +2,10 @@ import Container from "@/components/Container";
 import Title_container from "@/components/Title_container";
 import Sub_title from "@/components/fonts/Sub_title";
 import Paragraph from "@/components/fonts/Paragraph";
-
 import Button from "@/components/Button";
 import Title from "@/components/fonts/Title";
 
-export default function Studio_app() {
+export default function Hero_studio() {
   return (
     <section className="w-screen h-auto flex items-center justify-center pt-32 pb-20   ">
       <Container>
@@ -75,9 +74,6 @@ export default function Studio_app() {
                 <Paragraph>years</Paragraph>
               </div>
             </div>
-          </div>
-          <div className="w-full h-auto flex items-center justify-end pt-20">
-            <Button>meet our team</Button>
           </div>
         </div>
       </Container>
