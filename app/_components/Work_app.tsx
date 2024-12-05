@@ -27,9 +27,8 @@ export default function Work_app() {
                 <Image
                   src={item.src}
                   alt={item.alt}
-                  layout="fill"
-                  objectFit="cover"
-                  className="-z-10 "
+                  fill
+                  className="-z-10 object-cover "
                 />
 
                 <Link href={item.link}>

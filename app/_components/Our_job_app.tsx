@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Container from "@/components/Container";
 import Title_container from "@/components/Title_container";
-import Title from "@/components/fonts/Title";
+
 import Sub_title from "@/components/fonts/Sub_title";
 import Paragraph from "@/components/fonts/Paragraph";
 import Button from "@/components/Button";
@@ -43,8 +43,8 @@ export default function Our_job_app() {
                   <Image
                     src="/images/studio_1.jpg"
                     alt="Architectural firm Gehry"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
@@ -54,8 +54,8 @@ export default function Our_job_app() {
                   <Image
                     src="/images/studio_2.jpg"
                     alt="Architectural firm Gehry"
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>

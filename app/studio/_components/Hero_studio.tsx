@@ -2,7 +2,7 @@ import Container from "@/components/Container";
 import Title_container from "@/components/Title_container";
 import Sub_title from "@/components/fonts/Sub_title";
 import Paragraph from "@/components/fonts/Paragraph";
-import Button from "@/components/Button";
+
 import Title from "@/components/fonts/Title";
 
 export default function Hero_studio() {

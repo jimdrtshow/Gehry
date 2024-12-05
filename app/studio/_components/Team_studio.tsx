@@ -41,9 +41,8 @@ export default function Team_studio() {
             <Image
               src="/images/team_example.jpg"
               alt="team_gehry"
-              layout="fill"
-              objectFit="cover"
-              className="z-0 rounded-md"
+              fill
+              className="z-0 rounded-md object-cover"
             />
             <div className="w-full h-5/6 z-50 flex items-end justify-center">
               <div className="w-10/12 h-1/3 bg-white rounded-md ">

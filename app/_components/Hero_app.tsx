@@ -11,9 +11,8 @@ export default function Hero_app() {
       <Image
         src="/images/hero.jpg"
         alt="House Wallpaper 4k"
-        layout="fill"
-        objectFit="cover"
-        className="opacity-50"
+        fill
+        className="opacity-50 object-cover"
       />
       {/* Container Component for Margin */}
       <Container>

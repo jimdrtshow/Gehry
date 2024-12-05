@@ -1,4 +1,3 @@
-import Navigation from "@/components/Navigation";
 import Hero_app from "./_components/Hero_app";
 import Studio_app from "./_components/Studio_app";
 import Work_app from "./_components/Work_app";
