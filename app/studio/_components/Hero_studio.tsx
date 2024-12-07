@@ -7,11 +7,8 @@ import Title from "@/components/fonts/Title";
 
 export default function Hero_studio() {
   return (
-    <section className="w-screen h-auto flex items-center justify-center pt-32 pb-20   ">
+    <section className="w-screen h-auto flex items-center justify-center pt-5 pb-20   ">
       <Container>
-        <div className="w-auto h-auto absolute pt-5 pb-5">
-          <Paragraph>Studio.</Paragraph>
-        </div>
         <Title_container>
           Where innovation meets vision to design spaces that inspire and
           endure.
