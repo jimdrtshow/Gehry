@@ -5,6 +5,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import nav_items from "@/data/nav_items";
 import Container from "./Container";
+import Image from "next/image";
 
 export default function Navigation() {
   const [menuPhoneOpen, setMenuPhoneOpen] = React.useState(false);
@@ -12,11 +13,16 @@ export default function Navigation() {
   return (
     <nav>
       {/* NAVBAR */}
-      <div className=" w-screen h-[10vh]  fixed top-0 flex justify-center items-center z-50 bg-white ">
+      <div className=" w-screen h-[15vh]  top-0 flex justify-center items-center z-50  text-my_color_9 bg-my_color_1 fixed">
         <Container>
           <div className=" w-full h-full flex justify-between items-center  ">
-            <div className="w-2/6 lg:w-1/6 h-full flex items-center justify-start ">
-              <h1 className="text-xl  font-semibold tracking-[.5vw]">Gehry</h1>
+            <div className="w-2/6 lg:w-1/6 h-full flex items-center justify-start relative">
+              <Image
+                src="/images/logo.svg"
+                alt="Gehry logo exemple"
+                width={100}
+                height={100}
+              />
             </div>
             <div className="w-5/6 h-full hidden lg:flex items-center justify-end ">
               <ul className="inline-flex">
@@ -24,9 +30,9 @@ export default function Navigation() {
                   <li key={index} className="p-5">
                     <Link
                       href={item.href}
-                      className="text-black text-lg flex items-start justify-between"
+                      className="text-my_color_9 hover:text-my_color_7 text-[1rem] flex items-start justify-between"
                     >
-                      <span className="text-gray-600 text-xs pr-3">
+                      <span className="text-my_color_7 text-[0.618rem] pr-3">
                         0{index + 1}
                       </span>
                       {item.label}
@@ -53,7 +59,7 @@ export default function Navigation() {
       {/* MENU PAGE  */}
       <div
         className={clsx(
-          "w-screen h-[83vh] top-[10vh] fixed z-50 bg-white justify-center items-center",
+          "w-screen h-[95vh] top-[10vh] fixed z-50 bg-my_color_1 justify-center items-center",
           {
             hidden: !menuPhoneOpen,
             flex: menuPhoneOpen,

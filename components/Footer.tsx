@@ -5,7 +5,7 @@ import Container from "./Container";
 
 export default function Footer() {
   return (
-    <footer className="w-screen h-[7vh] bg-white fixed bottom-0 flex items-center justify-center">
+    <footer className="w-screen h-[7vh] bg-my_color_1 fixed  bottom-0 flex items-center justify-center text-my_color_9">
       <Container>
         <div className="w-full h-full flex items-center justify-center">
           <div className="w-1/2 h-full flex items-center justify-start">

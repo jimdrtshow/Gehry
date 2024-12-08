@@ -29,7 +29,7 @@ export default function Form() {
   return (
     <form onSubmit={handleSubmit} className="max-w-4xl mx-auto pt-16  ">
       {/* Full Name  */}
-      <div className="relative z-0 w-full mb-5 group mt-10">
+      <div className="relative z-0 w-full mb-5 group mt-5">
         <input
           type="text"
           name="fullName"

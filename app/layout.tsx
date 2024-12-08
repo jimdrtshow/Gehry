@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased overflow-x-hidden`}>
+      <body
+        className={`${poppins.className} antialiased overflow-x-hidden bg-my_white`}
+      >
         <Navigation />
         {children}
         <Footer />
