@@ -13,9 +13,9 @@ export default function Navigation() {
   return (
     <nav>
       {/* NAVBAR */}
-      <div className=" w-screen h-[15vh]  top-0 flex justify-center items-center z-50  text-my_color_9 bg-my_color_1 fixed">
+      <div className=" w-screen h-[7vh]  fixed top-0 flex justify-center items-center z-50  text-my_color_1 backdrop-blur-sm bg-black/30  ">
         <Container>
-          <div className=" w-full h-full flex justify-between items-center  ">
+          <div className=" w-full h-full flex justify-between items-center   ">
             <div className="w-2/6 lg:w-1/6 h-full flex items-center justify-start relative">
               <Image
                 src="/images/logo.svg"
@@ -30,12 +30,12 @@ export default function Navigation() {
                   <li key={index} className="p-5">
                     <Link
                       href={item.href}
-                      className="text-my_color_9 hover:text-my_color_7 text-[1rem] flex items-start justify-between"
+                      className="text-my_color_1 hover:text-my_color_7 text-[1.10rem]   flex items-start justify-between "
                     >
-                      <span className="text-my_color_7 text-[0.618rem] pr-3">
+                      <span className="text-my_color_4 text-[0.618rem] pr-3">
                         0{index + 1}
                       </span>
-                      {item.label}
+                      {item.label}.
                     </Link>
                   </li>
                 ))}

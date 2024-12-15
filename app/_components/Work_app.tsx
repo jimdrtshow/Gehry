@@ -1,22 +1,26 @@
-import Container from "@/components/Container";
-import Title_container from "@/components/Title_container";
-import Paragraph from "@/components/fonts/Paragraph";
+import Hero_section from "@/components/Hero_section";
+
 import Image from "next/image";
-import Title from "@/components/fonts/Title";
 import Link from "next/link";
 import work_app_items from "@/data/work_app_items";
-import Button from "@/components/Button";
 
 export default function Work_app() {
   return (
-    <section className="w-screen h-auto flex items-center justify-center pt-12 pb-20   ">
-      <Container>
-        <div className="w-auto h-auto absolute pt-5 pb-5">
-          <Paragraph>Last works.</Paragraph>
-        </div>
-        <Title_container>
-          Shaping bold concepts into spaces that balance vision and purpose.
-        </Title_container>
+    <section className="w-screen h-auto flex items-center justify-center">
+      <div className="w-11/12 h-5/6 ">
+        <Hero_section
+          children1={"Last works."}
+          children2={
+            "Where innovation meets vision to design spaces that inspire and endure."
+          }
+          children3={
+            "We craft unique architectural solutions that leave a lasting impression."
+          }
+          children4={
+            "At Gehry firm, we transform spaces into timeless expressions of creativity and functionality. Based in Milan, our agency is driven by a passion for innovative design and a commitment to sustainable practices. Our team of architects and designers works closely with clients to bring their visions to life, crafting unique environments that balance aesthetic elegance with practical solutions. From residential projects to large-scale commercial developments, we deliver tailored designs that reflect the individuality of each project."
+          }
+        />
+
         {work_app_items.map((item, index) => {
           return (
             <div
@@ -33,7 +37,7 @@ export default function Work_app() {
 
                 <Link href={item.link}>
                   <div className="w-full h-full flex items-center justify-center text-white ">
-                    <Title>{item.text}</Title>
+                    <h1>{item.text}</h1>
                   </div>
                 </Link>
               </div>
@@ -41,9 +45,9 @@ export default function Work_app() {
           );
         })}
         <div className="w-full h-auto flex items-center justify-end pt-20">
-          <Button>more</Button>
+          <button>button</button>
         </div>
-      </Container>
+      </div>
     </section>
   );
 }

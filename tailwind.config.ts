@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage:{
+        'my_bg': " linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2077964975052521) 82%, rgba(0,0,0,0) 100%);"
+      },
       colors: {
         // Coolors.co Palette
         my_color_1: "#F8F9FA",
@@ -19,6 +22,7 @@ export default {
         my_color_7: "#495057",
         my_color_8: "#343A40",
         my_color_9: "#212529",
+        my_yellow: '#fbb34e',
         
         background: "var(--background)",
         foreground: "var(--foreground)",

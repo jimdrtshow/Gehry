@@ -1,43 +1,47 @@
+"use client";
 import Image from "next/image";
-import { CiCircleChevDown } from "react-icons/ci";
+import { FaPlus } from "react-icons/fa";
 
 export default function HeroServices() {
   return (
-    <section className="w-screen h-screen relative flex items-center justify-center ">
-      <Image
-        src={"/images/services_app.jpg"}
-        alt={"#Blabla"}
-        fill
-        className="object-cover -z-10 opacity-60 "
-      />
-      <div className="w-full h-full bg-my_color_9 -z-20 absolute "></div>
-      <div className="w-11/12 h-5/6 flex flex-col items-center justify-center">
-        <div className="w-full h-2/3 flex items-center flex-nowrap  ">
-          <h1 className="text-[4.236rem] md:text-[6.854rem]   font-medium tracking-tight text-my_color_1">
-            Elevate your space.
-          </h1>
+    <section className="w-screen h-screen lg:flex  bg-my_color_1  ">
+      {/* BLOCK 1 */}
+      <div className="w-full lg:w-1/2 h-1/2 lg:h-full flex justify-center items-center  ">
+        <div className="w-11/12 h-5/6">
+          {/* TITLE */}
+          <div className="w-full h-3/4 flex items-center lg:items-start justify-start ">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl -tracking-wider p-2 ">
+              Our Services elevate your space.
+            </h1>
+          </div>
+          {/* DESCRIPTION */}
+          <div className="w-full h-1/4 ">
+            {/* DESCRIPTION BLOCK 2 (Button) */}
+            <div className="w-full  h-full flex items-end justify-end ">
+              <button className="  border-b-2 border-my_color_8  inline-flex justify-center items-center pl-2 pr-2 ">
+                <FaPlus />
+                <p className="text-lg p-2 ">more.</p>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div className="w-full h-1/3 flex items-center justify-between ">
-          <div className="w-1/2 h-full flex  items-end justify-start ">
-            <ul className="md:flex">
-              <li className="p-2   flex items-center justify-start">
-                <p className="p-2 rounded-3xl  border border-my_color_4 text-my_color_1 text-[1rem]">
-                  Building design
-                </p>
-              </li>
-              <li className="p-2   flex items-center justify-start">
-                <p className="p-2 rounded-3xl  border border-my_color_4 text-my_color_1 text-[1rem]">
-                  Interior design
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div className="w-1/2 h-full flex items-end justify-end ">
-            <CiCircleChevDown className="text-my_color_1 text-[4.236rem] opacity-70" />
-          </div>
+      {/* BLOCK 2  */}
+      <div className="w-full lg:w-1/2 h-1/2 lg:h-full flex justify-center items-center ">
+        {/* IMAGE */}
+        <div className="w-11/12 h-5/6 relative">
+          <Image
+            src={"/images/services_app.jpg"}
+            alt={"blabla"}
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
   );
+}
+
+{
 }
