@@ -1,5 +1,4 @@
 import Hero_section from "@/components/Hero_section";
-
 import Image from "next/image";
 import Link from "next/link";
 import work_app_items from "@/data/work_app_items";

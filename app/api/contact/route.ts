@@ -1,5 +1,5 @@
 
-import { EmailTemplate } from '@/components/Email_template';
+import { EmailTemplate } from '@/app/contact/_components/Email_template';
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 

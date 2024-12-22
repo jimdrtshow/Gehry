@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import nav_items from "@/data/nav_items";
-import Container from "./Container";
+
 import Image from "next/image";
 
 export default function Navigation() {
@@ -14,7 +14,7 @@ export default function Navigation() {
     <nav>
       {/* NAVBAR */}
       <div className=" w-screen h-[7vh]  fixed top-0 flex justify-center items-center z-50  text-my_color_1 backdrop-blur-sm bg-black/30  ">
-        <Container>
+        <div className="w-11/12 h-5/6 ">
           <div className=" w-full h-full flex justify-between items-center   ">
             <div className="w-2/6 lg:w-1/6 h-full flex items-center justify-start relative">
               <Image
@@ -54,7 +54,7 @@ export default function Navigation() {
               </button>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
       {/* MENU PAGE  */}
       <div
@@ -66,7 +66,7 @@ export default function Navigation() {
           }
         )}
       >
-        <Container>
+        <div className="w-11/12 h-5/6 ">
           <div className="w-full h-full flex justify-start items-start">
             <ul className="flex flex-col">
               {nav_items.map((item, index) => (
@@ -87,7 +87,7 @@ export default function Navigation() {
               ))}
             </ul>
           </div>
-        </Container>
+        </div>
       </div>
     </nav>
   );

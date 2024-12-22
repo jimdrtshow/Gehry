@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased overflow-x-hidden bg-my_white`}
+        className={`${poppins.className} antialiased overflow-x-hidden bg-my_color_1 text-my_color_9`}
       >
         {/* <Navigation /> */}
         {children}

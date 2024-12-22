@@ -1,20 +1,49 @@
-Studio.
-  Where innovation meets vision to design spaces that inspire and
-              endure.
+Font sizes:
+text-[11.089rem]
+text-[6.854rem]
+text-[4.236rem]
+text-[2.618rem]
+text-[1.618rem]
+text-[1rem]
+text-[0.618rem]
 
 
-              We craft unique architectural solutions that leave a lasting
-              impression.
+
+
+1: Faire button component 
+2: Retravailler Hero_section Components
+3: Établir une bdd solide 
+
+
+//Services CRUD
+
+✅ 1: Trouver le moyen de récupérer tous les services sous format json http://localhost:3000/api/services
+✅ 2: Lister les services dans la page service 
+✅ 3: Migrer nouveau schema prisma avec la ligne images et mettre en forme la page service
+⏰ 4: Créer une page http://localhost:3000/admin/services/page.tsx permettant de :
+    ✅  - Lister tous les services 
+    ✅  - Créer un service
+    ⏰  - Modifier un service
+    ✅  - Suprimer un service 
+⏰ 5: Créer un URL pour chaque service et mettre en forme la page 
 
 
 
 
-               At Gehry firm, we transform spaces into timeless expressions of
-              creativity and functionality. Based in Milan, our agency is driven
-              by a passion for innovative design and a commitment to sustainable
-              practices. Our team of architects and designers works closely with
-              clients to bring their visions to life, crafting unique environments
-              that balance aesthetic elegance with practical solutions. From
-              residential projects to large-scale commercial developments, we
-              deliver tailored designs that reflect the individuality of each
-              project.
+A faire à la fin du projet 👷
+    - Rechargement de la page lors de la suppression d'un service
+    - Supprimer image du bucket lors la suppression d'un service
+
+
+
+
+Commande prisma: 
+npx prisma migrate dev --name init 
+npx prisma db push
+npx prisma studio
+npx prisma generate
+
+
+
+
+
